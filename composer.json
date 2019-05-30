@@ -1,0 +1,45 @@
+{
+  "name": "xpressengine-plugin/guideline",
+  "description": "테마 및 게시판 스킨 제작 가이드라인",
+  "keywords": [
+    "xpressengine",
+    "theme",
+    "skin",
+    "module/board@board/skin"
+  ],
+  "version": "0.1.0",
+  "support": {
+    "issues": "https://github.com/xpressengine/plugin-guideline/issues"
+  },
+  "authors": [
+    {
+      "name": "BNU",
+      "email": "bnufactory@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "license": "Unlicense",
+  "type": "xpressengine-plugin",
+  "extra": {
+    "xpressengine": {
+      "title": "테마, 스킨 가이드",
+      "icon": "icon.png",
+      "component": {
+        "theme/guideline@guideline": {
+          "class": "Xpressengine\\Plugins\\Guideline\\Components\\Themes\\Guideline\\GuidelineTheme",
+          "name": "Guideline Theme"
+        },
+        "module/board@board/skin/guidelineCommon@board": {
+          "class": "Xpressengine\\Plugins\\Guideline\\Components\\Skins\\Board\\Common\\GuidelineCommonSkin",
+          "name": "Guideline.CommonSkin",
+          "description": "Guideline.CommonSkin"
+        }
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Xpressengine\\Plugins\\Guideline\\Components\\": "Components"
+    }
+  }
+}
